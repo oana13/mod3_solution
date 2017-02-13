@@ -8,7 +8,7 @@
 
 		function FoundItemsDirective(){
 			var ddo = {
-    		templateUrl: 'foundItems.html',
+    		template: '<div class="loader"></div><div class="list"> <ol> <li ng-repeat="cat in menu.categories"> <span>{{cat.name}}</span> <button class="butt" ng-click="menu.onRemove({index: $index});">Don&#39;t want this one!</button><br><div class="descr">({{cat.description}})</div></li></ol></div>',
     		scope: {
       	categories: '<',
 				onRemove: '&'
