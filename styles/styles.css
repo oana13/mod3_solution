@@ -50,3 +50,14 @@ input[type="text"] {
     transform: rotate(360deg);
   }
 }
+.list{
+  float: left;
+  margin-left:-410px;
+  margin-top: 50px;
+}
+.descr{
+  font-style: italic;
+}
+.butt{
+  float: right;
+}
