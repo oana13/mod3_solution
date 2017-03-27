@@ -2,6 +2,10 @@
 <html lang="en">
   <head>
     <title>Narrow Down Your Menu Choice</title>
+    <script
+  src="https://code.jquery.com/jquery-3.1.0.min.js"
+  integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+  crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
     <script src="app.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,10 +21,12 @@
      <div class="form-group narrow-button">
        <button ng-click="menu.narrow()" class="btn btn-primary">Narrow It Down For Me!</button>
      </div>
+    <span class="error1"> {{menu.warning}}</span>
+    <!--  found-items should be implemented as a component -->
 
-    <!-- found-items should be implemented as a component -->
-
-       <found-items categories="menu.categories" on-remove="menu.remove(index)"></found-items>
+       <found-items categories="menu.categories" 
+        on-remove="menu.remove(index)">
+      </found-items>
 
    </div>
 

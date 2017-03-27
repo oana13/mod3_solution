@@ -52,8 +52,9 @@ input[type="text"] {
 }
 .list{
   float: left;
-  margin-left:-410px;
+  margin-left:-30em;
   margin-top: 50px;
+  width: 50em;
 }
 .descr{
   font-style: italic;
@@ -61,3 +62,9 @@ input[type="text"] {
 .butt{
   float: right;
 }
+.error {
+  color: red;
+  font-weight: bold;
+  display: none;
+}
+
